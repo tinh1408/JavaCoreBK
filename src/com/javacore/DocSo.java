@@ -28,8 +28,8 @@ public class DocSo {
         }
    }
 
-    private static void docHangDonVi(int soDonvi){
-        switch (soDonvi){
+    private static void docHangDonVi(int strHangDonVi){
+        switch (strHangDonVi){
             case 0:
                 System.out.print("zero ");
                 break;
