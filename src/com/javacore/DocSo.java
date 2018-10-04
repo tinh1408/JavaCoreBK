@@ -13,18 +13,22 @@ public class DocSo {
        int hangChuc = soCanDoc%100;
        int hangDonVi = soCanDoc %10;
 
-        if(hangTram !=0){
+        if(hangTram !=0 && hangChuc!=0){
             hangCoBan(hangTram);
             System.out.print("hundred and ");
-        }
-        if(hangChuc !=0 &&(hangChuc>22)){
-           docHangTy(hangChuc/10);
-           hangCoBan(hangChuc%10);
-        }else if(hangChuc>=10 && hangChuc < 22){
-            docHangTeen(hangChuc);
-        }else {
-            hangCoBan(hangDonVi);
-        }
+            if(hangChuc !=0 &&(hangChuc>22)){
+                docHangTy(hangChuc/10);
+                hangCoBan(hangChuc%10);
+            }else if(hangChuc>=10 && hangChuc < 22){
+                docHangTeen(hangChuc);
+            }else {
+                hangCoBan(hangDonVi);
+            }
+        }else{
+            hangCoBan(hangTram);
+            System.out.print("hundred ");
+       }
+
    }
 
     private static void hangCoBan(int strHangCoBan){
