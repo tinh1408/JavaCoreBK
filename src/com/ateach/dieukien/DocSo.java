@@ -1,4 +1,4 @@
-package com.javacore;
+package com.ateach.dieukien;
 
 import java.util.Scanner;
 

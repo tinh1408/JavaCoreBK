@@ -1,4 +1,4 @@
-package com.javacore.array;
+package com.ateach.array;
 
 public class SapXepMang {
     public static void sapXepThuTuMang(){

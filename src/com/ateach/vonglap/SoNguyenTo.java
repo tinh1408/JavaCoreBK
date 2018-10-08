@@ -1,6 +1,4 @@
-package com.javacore;
-
-import java.util.Scanner;
+package com.ateach.vonglap;
 
 public class SoNguyenTo {
     // TODO code application logic here

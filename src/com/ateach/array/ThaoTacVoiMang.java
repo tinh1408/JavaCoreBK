@@ -1,4 +1,4 @@
-package com.javacore.array;
+package com.ateach.array;
 
 import java.util.Scanner;
 

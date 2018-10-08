@@ -1,11 +1,10 @@
-package com.javacore;
+package com.ateach.dieukien;
 
 import java.util.Random;
 import java.util.Scanner;
 
-public class Main {
-
-    public static void main(String[] args) {
+public class xoSo {
+    public void xoSoKienThiet(){
         Random rd = new Random();
         int bound;
         //int rds = rd.nextInt(bound = 99);
@@ -47,6 +46,5 @@ public class Main {
         }
         while (gtri = true);
     }
-
-
 }
+
