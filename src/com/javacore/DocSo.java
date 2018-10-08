@@ -8,11 +8,9 @@ public class DocSo {
        Scanner scn = new Scanner(System.in);
        System.out.println("Nhap so can doc: " );
        soCanDoc = scn.nextInt();
-
        int hangTram = soCanDoc/100;
        int hangChuc = soCanDoc%100;
        int hangDonVi = soCanDoc %10;
-
         if(hangTram !=0 && hangChuc!=0){
             hangCoBan(hangTram);
             System.out.print("hundred and ");
@@ -28,7 +26,6 @@ public class DocSo {
             hangCoBan(hangTram);
             System.out.print("hundred ");
        }
-
    }
 
     private static void hangCoBan(int strHangCoBan){
@@ -63,8 +60,6 @@ public class DocSo {
             case 9:
                 System.out.print("nine ");
                 break;
-
-
         }
     }
     private static void docHangTy(int strHangChuc){
@@ -129,5 +124,4 @@ public class DocSo {
                 break;
         }
     }
-
 }

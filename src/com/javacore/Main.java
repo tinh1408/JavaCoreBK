@@ -1,16 +1,18 @@
 package com.javacore;
 
-import java.util.Random;
-import java.util.Scanner;
+import com.javacore.array.ThaoTacVoiMang;
 
 public class Main {
-
     public static void main(String[] args) {
-    //SoNguyenTo obj = new SoNguyenTo();
-    //obj.inRaSoNguyenTo();
-        DocSo obj = new DocSo();
-        obj.chuyenSoThanhChu();
+        ThaoTacVoiMang tpt = new ThaoTacVoiMang();
+//        tpt.themPhanTuVaoCuoi();
+//        tpt.themPhanTuVaoDau();
+//        tpt.xoaPhanTuDauTien();
+//        tpt.xoaPhanTuCuoiCung();
+        tpt.themPhanTuVaoGiua();
+//        tpt.xoaPhanTuGiua();
     }
+
 }
 
 
