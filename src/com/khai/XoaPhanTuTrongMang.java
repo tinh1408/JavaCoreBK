@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class XoaPhanTuTrongMang {
     public static void xoaPhanTu(){
-        int[] array = new int[10];
+        int[] array = new int[4];
         Scanner sc = new  Scanner(System.in);
 
         System.out.println("Nhap gia tri cho mang :");
