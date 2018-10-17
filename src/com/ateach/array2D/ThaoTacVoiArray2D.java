@@ -22,7 +22,56 @@ public class ThaoTacVoiArray2D {
             }
             System.out.println();
         }
-        //
+        int sum= 0;
+        for(int j=0; j<assignValue.length; j++){
+            sum = sum + assignValue[j][3];
+        }
+        System.out.println("gia tri:"+sum);
+        double trungBinh = sum/3;
+        System.out.println(trungBinh);
 
+        //
+    }
+
+    public static void bangTuanHoan(){
+        int [][] tuanHoan = new int[][]{{3,5,7,9},{4,2},{5,7,8,6},{6}};
+        inMang(tuanHoan);
+    }
+
+    public static void inMang(int arrs[][]){
+        System.out.println("mang in ra: ");
+        for (int i=0; i<arrs.length; i++){
+            for(int j=0; j<arrs[i].length; j++){
+                System.out.print(arrs[i][j]+ " ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void duongCheoThuNhat(){
+        int[][] arrgs = new int[][]{{1,2,4},{5,6,8},{9,6,3}};
+        int sum = 0;
+        for(int i = 0; i<arrgs.length;i++){
+            for(int j=0; j<arrgs[i].length; j++){
+                if(i==j){
+                    sum =sum+arrgs[i][j];
+                }
+            }
+        }
+        System.out.println("tong duong cheo: "+sum);
+        inMang(arrgs);
+    }
+
+    public static void duongCheoThuHai(){
+        int[][] arr2d = new int[][]{{1,2,4},{5,6,8},{9,6,3}};
+        int sum1 =0;
+
+        for(int k = 0; k<arr2d.length; k++){
+            for(int q  = arr2d[k].length-1; q>0;q--){
+                sum1 = sum1+ arr2d[k][q];
+            }
+        }
+        inMang(arr2d);
+        System.out.println(sum1);
     }
 }
