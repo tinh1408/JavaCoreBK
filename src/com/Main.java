@@ -7,6 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
         ThaoTacVoiArray2D tt = new ThaoTacVoiArray2D();
+        tt.congHaiMaTran();
     }
 
 }

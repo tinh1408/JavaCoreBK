@@ -74,4 +74,16 @@ public class ThaoTacVoiArray2D {
         inMang(arr2d);
         System.out.println(sum1);
     }
+
+    public static void congHaiMaTran (){
+        int [][] maTran1 = new int[][]{{2,3,4},{1,1,1},{6,5,2}};
+        int [][] maTran2 = new int[][]{{1,6,7},{3,4,6},{2,3,2}};
+        int [][] maTran3 = new int[3][3];
+        for(int i = 0; i<maTran1.length; i++){
+            for(int j = 0; j<maTran1[i].length; j++){
+                maTran3[i][j] = maTran1[i][j] + maTran2[i][j];
+            }
+        }
+        inMang(maTran3);
+    }
 }
