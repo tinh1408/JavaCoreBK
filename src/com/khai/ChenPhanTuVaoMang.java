@@ -23,6 +23,7 @@ public class ChenPhanTuVaoMang {
             System.out.println("Khong the chen duoc phan tu vao mang");
         }
         else {
+
             for (int i = index; i < array.length; i++) {
                 if (i == array.length - 1) {
                     array[i] = x;

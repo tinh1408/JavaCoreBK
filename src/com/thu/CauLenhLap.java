@@ -1,4 +1,4 @@
-package com.thu;
+    package com.thu;
 
 import java.util.Scanner;
 
