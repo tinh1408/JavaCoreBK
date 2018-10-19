@@ -29,18 +29,14 @@ public class MakeArrayCosecutive {
                 }
             }
         }
-      //  Arrays.sort(args);
 
-//        int sum =0;
         int sum=0;
         for(int i=0;i<args.length-1;i++){
             if(args[i]+1!=args[i+1]){
                 sum=sum+args[i+1]-args[i]-1;
             }
         }
-        System.out.println(sum);
-        //
-        //in mang
+
         System.out.println("-----");
         for(int k = 0;k<args.length;k++){
             System.out.println(args[k]);

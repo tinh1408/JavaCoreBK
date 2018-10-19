@@ -3,8 +3,7 @@ package com.ateach.dieukien;
 import java.util.Random;
 import java.util.Scanner;
 
-public class xoSo {
-
+public class XoSoKienThiet {
     public void xoSoKienThiet(){
         Random rd = new Random();
         int bound;
@@ -48,4 +47,3 @@ public class xoSo {
         while (gtri = true);
     }
 }
-
