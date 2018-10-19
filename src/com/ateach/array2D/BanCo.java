@@ -25,12 +25,12 @@ public class BanCo {
 
         //duyet qua cot
         for (int i = 0; i < banCoMoi.length; i++) {
-            System.out.print(banCoMoi[i][soViTri-1] + " ");
+            System.out.print(banCoMoi[i][soViTri - 1] + " ");
 
         }
         //duyet qua dong
         for (int i = 0; i < banCoMoi.length; i++) {
-            System.out.print(banCoMoi[soViTri-1][i] + " ");
+            System.out.print(banCoMoi[soViTri - 1][i] + " ");
         }
     }
 

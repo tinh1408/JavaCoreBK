@@ -3,30 +3,30 @@ package com.ateach.array;
 import java.util.Arrays;
 
 public class UsingArrays {
-    public static void usingArraysUtil(){
-    int[] source = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-    int[] source1 = {1, 2, 3};
-    int[] destination = null;
+    public static void usingArraysUtil() {
+        int[] source = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+        int[] source1 = {1, 2, 3};
+        int[] destination = null;
         System.out.println("Source array = " + Arrays.toString(source));
 
-    destination = copyFirstFiveFieldsOfArrayUsingSystem(source);
+        destination = copyFirstFiveFieldsOfArrayUsingSystem(source);
         System.out.println("Copy First five elements of array if available. Result array = " + Arrays.toString(destination));
 
-    destination = copyFirstFiveFieldsOfArrayUsingSystem(source1);
+        destination = copyFirstFiveFieldsOfArrayUsingSystem(source1);
         System.out.println("Copy First five elements of array if available. Result array = " + Arrays.toString(destination));
 
-    destination = copyFullArrayUsingSystem(source);
+        destination = copyFullArrayUsingSystem(source);
         System.out.println("Copy full array using System.copyarray() function. Result array = " + Arrays.toString(destination));
 
-    destination = copyFullArrayUsingClone(source);
+        destination = copyFullArrayUsingClone(source);
         System.out.println("Copy full array using clone() function. Result array = " + Arrays.toString(destination));
 
-    destination = copyFullArrayUsingArrayCopyOf(source);
+        destination = copyFullArrayUsingArrayCopyOf(source);
         System.out.println("Copy full array using Arrays.copyOf() function. Result array = " + Arrays.toString(destination));
 
-    destination = copyLastThreeUsingArrayCopyOfRange(source);
+        destination = copyLastThreeUsingArrayCopyOfRange(source);
         System.out.println("Copy last three elements using Arrays.copyOfRange() function. Result array = " + Arrays.toString(destination));
-}
+    }
 
     /**
      * This method copy full array using Arrays.copyOf() function

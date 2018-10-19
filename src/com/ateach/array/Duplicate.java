@@ -19,14 +19,14 @@ dsf
 */
 
 public class Duplicate {
-    public static void fistDuplicate(){
+    public static void fistDuplicate() {
         int minIndex = 0;
         int args[] = new int[]{1, 1, 2, 2, 1};
-        for(int i = 0; i<args.length-1; i++) {
+        for (int i = 0; i < args.length - 1; i++) {
             int vl = args[i];
             for (int j = i + 1; j < args.length; j++) {
-                if(vl == args[j]){
-                    if(j<args.length){
+                if (vl == args[j]) {
+                    if (j < args.length) {
                         minIndex = j;
                     }
                 }

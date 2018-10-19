@@ -15,30 +15,29 @@ package com.ateach.array;
         Ratiorg needs statues of sizes 4, 5 and 7.*/
 
 
-
 public class MakeArrayCosecutive {
-    public static void makeArrayConsecutive2(){
-        int[] args = new int[]{6,2,3,8};
+    public static void makeArrayConsecutive2() {
+        int[] args = new int[]{6, 2, 3, 8};
         // sap xep
-        for(int i=0; i<args.length;i++){
-            for(int j=i+1; j<args.length;j++){
-                if(args[i]>args[i+1]){
+        for (int i = 0; i < args.length; i++) {
+            for (int j = i + 1; j < args.length; j++) {
+                if (args[i] > args[i + 1]) {
                     int temp = args[i];
-                    args[i]=args[j];
-                    args[j]=temp;
+                    args[i] = args[j];
+                    args[j] = temp;
                 }
             }
         }
 
-        int sum=0;
-        for(int i=0;i<args.length-1;i++){
-            if(args[i]+1!=args[i+1]){
-                sum=sum+args[i+1]-args[i]-1;
+        int sum = 0;
+        for (int i = 0; i < args.length - 1; i++) {
+            if (args[i] + 1 != args[i + 1]) {
+                sum = sum + args[i + 1] - args[i] - 1;
             }
         }
 
         System.out.println("-----");
-        for(int k = 0;k<args.length;k++){
+        for (int k = 0; k < args.length; k++) {
             System.out.println(args[k]);
         }
     }
