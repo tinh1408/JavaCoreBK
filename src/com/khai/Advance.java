@@ -32,7 +32,8 @@ public class Advance {
         }
         return count;
     }
-    static int firstDuplicate(int[] arr){
+
+   public static int firstDuplicate(int[] arr){
         int a = 0, b = arr.length;
 
         for (int i = 0; i < arr.length -1; i++){
