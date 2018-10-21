@@ -1,12 +1,13 @@
 package com;
 
+import com.ateach.method.BaiTap;
 import com.ateach.method.ThamBienThamTri;
 
 public class Main {
     public static void main(String[] args) {
-        ThamBienThamTri vd = new ThamBienThamTri();
-        vd.goiHam();
-
+        BaiTap bt = new BaiTap();
+//        bt.isPalindrome();
+        bt.giaPhong();
     }
 }
 
