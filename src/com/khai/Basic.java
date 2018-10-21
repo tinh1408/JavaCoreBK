@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Basic {
-    public static void main(String[] args) {
+    public static void basicAssignment() {
         int[] a = {2, 4, 3, 5, 7};
         System.out.println("Nhap phan tu can tim");
         Scanner sc = new Scanner(System.in);
@@ -42,6 +42,11 @@ public class Basic {
             }
         }
         System.out.println("max: " +max + "  min: "+min);
+        // bai tim max va min chua dung
+        // em co the su dung phuong thuc sort xong roi lay phan tu dau tien va cuoi cung
+
+        Arrays.sort(a);
+        System.out.println("max: " +a[a.length-1] + "  min: "+a[0]);
         System.out.println("-------------------------------");
     }
 }

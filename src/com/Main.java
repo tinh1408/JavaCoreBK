@@ -2,12 +2,15 @@ package com;
 
 import com.ateach.method.BaiTap;
 import com.ateach.method.ThamBienThamTri;
+import com.khai.*;
 
 public class Main {
     public static void main(String[] args) {
         BaiTap bt = new BaiTap();
 //        bt.isPalindrome();
-        bt.giaPhong();
+//        bt.giaPhong();
+         Basic bs = new Basic();
+         bs.basicAssignment();
     }
 }
 
