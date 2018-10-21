@@ -16,15 +16,6 @@ public class BaiTap {
         }
         System.out.println(isPa);
     }
-    public boolean checkPalindrome(String inputString) {
-        for(int i = 0; i < inputString.length()/2; i++){
-            if(inputString.charAt(i) != inputString.charAt(inputString.length()-i-1))
-                return false;
-        }
-        return true;
-    }
-
-
 
     /* #2.Given n and firstNumber, find the number which is written in the radially opposite position to firstNumber.*/
 
@@ -41,11 +32,11 @@ public class BaiTap {
                          {2, 0, 3, 3}};
         int sum = 0;
         for(int cot =0; cot <rooms[0].length; cot++) {
-            for (int i = 0; i < rooms.length; i++) {
-                if(rooms[i][cot] == 0){
+            for (int hang = 0; hang < rooms.length; hang++) {
+                if(rooms[hang][cot] == 0){
                     break;
                 }else{
-                    sum = sum+rooms[i][cot];
+                    sum = sum+rooms[hang][cot];
                 }
             }
         }
