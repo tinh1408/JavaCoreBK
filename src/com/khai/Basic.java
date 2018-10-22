@@ -30,6 +30,28 @@ public class Basic {
         System.out.println(Arrays.toString(d));
         System.out.println("--------------------------------");
 
+//        int min = 0, max = 0;
+//        for(int i = 1; i < a.length; i++){
+//            if(a[i]<a[i-1]) {
+//                max = a[i-1];
+//                min = a[i];
+//            }
+//            else{
+//                max = a[i];
+//                min = a[i-1];
+//            }
+//        }
+//        System.out.println("max: " +max + "  min: "+min);
+        // bai tim max va min chua dung
+        // em co the su dung phuong thuc sort xong roi lay phan tu dau tien va cuoi cung
+
+        Arrays.sort(a);
+        System.out.println("max: " +a[a.length-1] + "  min: "+a[0]);
+        System.out.println("-------------------------------");
+    }
+
+    public static int timMaxMin(){
+        int[] a = {2, 4, 3, 5, 7};
         int min = 0, max = 0;
         for(int i = 1; i < a.length; i++){
             if(a[i]<a[i-1]) {
@@ -41,12 +63,6 @@ public class Basic {
                 min = a[i-1];
             }
         }
-        System.out.println("max: " +max + "  min: "+min);
-        // bai tim max va min chua dung
-        // em co the su dung phuong thuc sort xong roi lay phan tu dau tien va cuoi cung
-
-        Arrays.sort(a);
-        System.out.println("max: " +a[a.length-1] + "  min: "+a[0]);
-        System.out.println("-------------------------------");
+        return min;
     }
 }
