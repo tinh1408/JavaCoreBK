@@ -2,8 +2,8 @@ package com.ateach.method;
 
 public class BaiTap {
     /*  #1. Given the string, check if it is a palindrome.*/
-    public static void isPalindrome() {
-        String str = "abvffvba";
+    public static boolean isPalindrome(String str) {
+
         boolean isPa = false;
         System.out.println(str.length());
         for (int i = 0; i < str.length(); i++) {
@@ -14,7 +14,8 @@ public class BaiTap {
                 isPa = true;
             }
         }
-        System.out.println(isPa);
+       return isPa;
+
     }
     /* #2.Given n and firstNumber, find the number which is written in the radially opposite position to firstNumber.*/
 
