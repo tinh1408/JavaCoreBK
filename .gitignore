@@ -19,7 +19,6 @@
 *.tar.gz
 *.rar
 *.git
-*.txt
 *.idea
 *.xml
 
