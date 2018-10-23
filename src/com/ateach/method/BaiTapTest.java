@@ -2,7 +2,7 @@ package com.ateach.method;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class BaiTapTest {
 
@@ -11,7 +11,6 @@ public class BaiTapTest {
         String str = "abvffvba44";
         BaiTap bt = new BaiTap();
         boolean test = bt.isPalindrome(str);
-
         assertEquals(test, true);
 
 

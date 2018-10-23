@@ -17,7 +17,7 @@ public class BaiTap {
        return isPa;
 
     }
-    /* #2.Given n and firstNumber, find the number which is written in the radially opposite position to firstNumber.*/
+/* #2.Given n and firstNumber, find the number which is written in the radially opposite position to firstNumber.*/
 
 /* #3. After they became famous, the CodeBots all decided to move to a new building and live together.
     The building is represented by a rectangular matrix of rooms. Each cell in the matrix contains
