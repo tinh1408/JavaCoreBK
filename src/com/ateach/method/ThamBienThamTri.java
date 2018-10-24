@@ -12,7 +12,6 @@ public class ThamBienThamTri {
         System.out.println("------------Truyen tham bien------------");
         System.out.println();
 
-
         int [] mangGoc = {400,500};
         System.out.println("Gia tri ban dau: " + mangGoc[0] + " " +mangGoc[1]);
         truyenThamChieu(mangGoc);

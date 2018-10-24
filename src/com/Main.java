@@ -1,25 +1,12 @@
 package com;
 
-import com.ateach.method.BaiTap;
-import com.ateach.method.ThamBienThamTri;
-import com.khai.*;
+import com.ateach.dequy.ViDuDeQuy;
 
 public class Main {
     public static void main(String[] args) {
-        BaiTap bt = new BaiTap();
-//        bt.isPalindrome();
-//        bt.giaPhong();
-         Basic bs = new Basic();
-         bs.basicAssignment();
+        ViDuDeQuy vd = new ViDuDeQuy();
+        float tong = vd.tinhTongPhanSo(5);
+        System.out.println("tong: "+tong);
+
     }
 }
-
-
-
-//    static void m(int x) {
-//        x = 200;
-//    }
-
-//        int a = 100;
-//        m(a);
-//        System.out.println(a);
