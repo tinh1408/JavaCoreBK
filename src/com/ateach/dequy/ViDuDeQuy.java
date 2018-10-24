@@ -16,4 +16,5 @@ public class ViDuDeQuy {
             return tinhTongPhanSo(n-1 )+ ((float)1)/n;
         }
     }
+
 }

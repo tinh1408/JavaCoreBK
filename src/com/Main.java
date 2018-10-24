@@ -7,6 +7,6 @@ public class Main {
         ViDuDeQuy vd = new ViDuDeQuy();
         float tong = vd.tinhTongPhanSo(5);
         System.out.println("tong: "+tong);
-
+        System.out.println(vd.tongHaiS(3,45,6));
     }
 }
