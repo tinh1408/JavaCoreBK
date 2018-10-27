@@ -1,10 +1,5 @@
 package com;
 
-import com.ateach.dequy.BaitapDeQuy;
-import com.ateach.method.BaiTap;
-import com.ateach.method.ThamBienThamTri;
-import com.khai.*;
-
 public class Main {
     public static void main(String[] args) {
 //        System.out.println(firstNotRepeatingCharacter("abacabad"));
