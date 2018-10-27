@@ -3,7 +3,8 @@ package com.khai;
 import java.util.Scanner;
 
 public class DemSoLanXuatHien {
-    public static void soLanXuatHien(){
+
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Nhap chuoi :");
@@ -34,5 +35,8 @@ public class DemSoLanXuatHien {
             System.out.println("So luan ki tu "+n.charAt(0)+"Xuat hien la :"+count);
             z = false;
         }
+
+
+
     }
 }

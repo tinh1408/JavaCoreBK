@@ -3,7 +3,8 @@ package com.khai;
 import java.util.Scanner;
 
 public class GopHaiMang {
-    public static void gopHaiMang(){
+
+    public static void main(String[] args) {
         int[] array1 = new int[5];
         int[] array2 = new int[5];
         Scanner sc = new Scanner(System.in);
@@ -31,5 +32,6 @@ public class GopHaiMang {
             }
             System.out.print(array3[i]+"\t");
         }
+
     }
 }
