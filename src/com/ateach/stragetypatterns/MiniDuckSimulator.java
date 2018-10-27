@@ -1,4 +1,4 @@
-package com.stragetypatterns;
+package com.ateach.stragetypatterns;
 
 public class MiniDuckSimulator {
     public static void main(String[] args) {

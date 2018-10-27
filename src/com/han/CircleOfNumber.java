@@ -2,7 +2,7 @@ package com.han;
 
 import java.util.Scanner;
 
-public class BaiTap2 {
+public class CircleOfNumber {
 
     public static void main(String[] args) {
        circleOfNumber(10,2);

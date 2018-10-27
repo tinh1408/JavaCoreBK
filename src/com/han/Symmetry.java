@@ -2,7 +2,7 @@ package com.han;
 
 import java.util.Scanner;
 
-public class BaiTap1 {
+public class Symmetry {
     public static void main(String[] args) {
         System.out.println(Symmetry("assddss"));
         if (Symmetry("aabaa")) System.out.println("day la day doi xung");

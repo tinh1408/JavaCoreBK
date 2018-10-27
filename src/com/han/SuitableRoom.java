@@ -1,6 +1,6 @@
 package com.han;
 
-public class BaiTap3 {
+public class SuitableRoom {
     public static void main(String[] args) {
         System.out.println(suitableRoom());
 
