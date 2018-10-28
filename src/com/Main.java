@@ -1,29 +1,30 @@
 package com;
 
-class TestThis{
-    int a, b;
+class ClassA{
+    int a;
 
-    public TestThis(){
+    public ClassA(){
         a = 300;
     }
 
-    public void accessClassB(){
-        TestB obj = new TestB();
-        System.out.println("a cua TestB: "+obj.a);
-        System.out.println("a cua Test This: "+this.a);
+    public void callClassB(){
+        ClassB obj = new ClassB();
+        System.out.println("a cua Test B: "+obj.a);
+        System.out.println("a cua Test A: "+this.a);
     }
 }
 
-class TestB{
-    int a = 20;
+class ClassB{
+    int a;
+    public ClassB(){
+        a = 200;
+    }
 }
-
-
 
 public class Main {
     public static void main(String[] args) {
-        TestThis ts = new TestThis();
-        ts.accessClassB();
+        ClassA ts = new ClassA();
+        ts.callClassB();
     }
 }
 
