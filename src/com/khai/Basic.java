@@ -50,8 +50,8 @@ public class Basic {
         System.out.println("-------------------------------");
     }
 
-    public static int timMaxMin(){
-        int[] a = {2, 4, 3, 5, 7};
+    public static int timMaxMin(int [] a){
+
         int min = 0, max = 0;
         for(int i = 1; i < a.length; i++){
             if(a[i]<a[i-1]) {
