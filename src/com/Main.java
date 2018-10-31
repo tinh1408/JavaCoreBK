@@ -8,9 +8,7 @@ import java.util.Scanner;
 public class Main {
     private static Scanner scn = new Scanner(System.in);
     static final String TIME_OPEN = "9PM";
-
     public static void main(String[] args) {
-
         int enter;
         do{
             System.out.println("-------------------MENU--------------------");
@@ -61,8 +59,6 @@ public class Main {
         }while (enter != 0);
     }
 
-
-
     public static void infoCustomer(String name, int age){
         System.out.println("-----------Check in info-----------");
         System.out.println("Name:\t" + name);
@@ -94,6 +90,7 @@ public class Main {
             System.out.println("Welcome!!!");
         }
     }
+
     public static void caculatorForRent(String type, int date){
         switch (type){
             case "V":
