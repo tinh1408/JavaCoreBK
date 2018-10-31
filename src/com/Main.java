@@ -1,7 +1,5 @@
 package com;
 
-import java.sql.SQLOutput;
-import java.sql.Time;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoField;
@@ -15,13 +13,14 @@ public class Main {
 
         int enter;
         do{
-            System.out.println("---------MENU------------------------------");
+            System.out.println("-------------------MENU--------------------");
             System.out.println("*    1. Check in                          *");
             System.out.println("*    2. Swimming Pool Opening Times       *");
             System.out.println("*    3. Service                           *");
             System.out.println("*       3.1. Swimming Pool Service        *");
-            System.out.println("*       3.2. Day for rent                 *");
+            System.out.println("*       3.2. Rent day                     *");
             System.out.println("*    0. Exit                              *");
+            System.out.println("*    4. Continues                         *");
             System.out.println("-------------------------------------------");
             System.out.print("    Please choose:   ");
             String choose = scn.next();
@@ -65,7 +64,7 @@ public class Main {
 
 
     public static void infoCustomer(String name, int age){
-        System.out.println("-----------Customer info-----------");
+        System.out.println("-----------Check in info-----------");
         System.out.println("Name:\t" + name);
         System.out.println("Age:\t "+ age);
     }
@@ -98,10 +97,10 @@ public class Main {
     public static void caculatorForRent(String type, int date){
         switch (type){
             case "V":
-                System.out.println("You pay "+costForRent(type, date)+" USD/" +date+" days");
+                System.out.println("You pay "+rentCharge(type, date)+" USD/" +date+" days");
                 break;
             case "H":
-                System.out.println("You pay "+costForRent(type, date)+"USD/" +date+" days");
+                System.out.println("You pay "+rentCharge(type, date)+"USD/" +date+" days");
                 break;
             default:
                 System.out.println("No service");
@@ -109,7 +108,7 @@ public class Main {
         }
     }
 
-    public static float costForRent(String type, int date){
+    public static float rentCharge(String type, int date){
         float cost = 0;
         if (type.equals("V")){
             cost =  10*(float)date;
