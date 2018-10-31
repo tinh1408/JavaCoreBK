@@ -121,7 +121,7 @@ public class Main {
     public static void dayForRent(String type, float money){
         switch (type){
             case "V" :
-                System.out.println("You have"+ (int)money/10+" days ");
+                System.out.println("You have "+ (int)money/10+" days ");
                 break;
             case "H":
                 System.out.println("You have "+(int)money/5+" days");
