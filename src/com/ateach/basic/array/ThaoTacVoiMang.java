@@ -27,7 +27,6 @@ public class ThaoTacVoiMang {
         for (int i = 0; i < arrStr.length; i++) {
             arrNewStr[i + 1] = arrStr[i];
         }
-
     }
 
     public static void themPhanTuVaoGiua() {

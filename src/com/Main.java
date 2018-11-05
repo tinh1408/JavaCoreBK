@@ -9,6 +9,7 @@ public class Main {
     private static Scanner scn = new Scanner(System.in);
     static final String TIME_OPEN = "9PM";
     public static void main(String[] args) {
+        VillaManager vl = new VillaManager();
         int enter;
         do{
             System.out.println("-------------------MENU--------------------");
@@ -17,6 +18,9 @@ public class Main {
             System.out.println("*    3. Service                           *");
             System.out.println("*       3.1. Swimming Pool Service        *");
             System.out.println("*       3.2. Rent day                     *");
+            System.out.println("*    4. Manager Villa                     *");
+            System.out.println("*       4.1. Add new bed and swimming pool*");
+            System.out.println("*       4.2. Display info villa           *");
             System.out.println("*    0. Exit                              *");
             System.out.println("*    4. Continues                         *");
             System.out.println("-------------------------------------------");
@@ -50,6 +54,14 @@ public class Main {
                     String types = scn.next();
                     dayForRent(types.toUpperCase(), money);
                 break;
+                case "4.1":
+                    System.out.println("Enter total villa in furama resort");
+                    int total = scn.nextInt();
+                    vl.addNewVilla(total);
+                    break;
+                case "4.2":
+                    vl.displayVillaInfo();
+                    break;
                 default:
                      System.out.println("Please enter valid number:");
                 break;
