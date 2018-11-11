@@ -10,104 +10,69 @@ public class Main {
         static final String TIME_OPEN = "9PM";
 
         public static void main(String[] args) {
-            inRa();
+            VillaManager vl = new VillaManager();
+            int enter;
+            do{
+                System.out.println("-------------------MENU--------------------");
+                System.out.println("*    1. Check in                          *");
+                System.out.println("*    2. Swimming Pool Opening Times       *");
+                System.out.println("*    3. Service                           *");
+                System.out.println("*       3.1. Swimming Pool Service        *");
+                System.out.println("*       3.2. Rent day                     *");
+                System.out.println("*    4. Manager Villa                     *");
+                System.out.println("*       4.1. Add new bed and swimming pool*");
+                System.out.println("*       4.2. Display info villa           *");
+                System.out.println("*    0. Exit                              *");
+                System.out.println("*    4. Continues                         *");
+                System.out.println("-------------------------------------------");
+                System.out.print("    Please choose:   ");
+                String choose = scn.next();
+                switch (choose){
+                    case "1":
+                        System.out.println("Enter name of customer: ");
+                        String customerName = scn.next();
+                        System.out.println("Enter age of customer: ");
+                        int  customerAge = scn.nextInt();
+                        System.out.println("Enter V (Villa) or H(House)");
+                        String type = scn.next();
+                        System.out.println("Enter day");
+                        int day = scn.nextInt();
+                        infoCustomer(customerName,customerAge);
+                        caculatorForRent(type.toUpperCase(),day);
+                        break;
+                    case "2":
+                        swimmingPoolOpenTimes(TIME_OPEN);
+                        break;
+                    case "3.1":
+                        System.out.println("Enter time (format: hh:mm): ");
+                        String time = scn.next();
+                        swimmingPoolService(time);
+                        break;
+                    case "3.2":
+                        System.out.println("Enter money");
+                        float money = scn.nextFloat();
+                        System.out.println("Enter V (Villa) or H(House)");
+                        String types = scn.next();
+                        dayForRent(types.toUpperCase(), money);
+                        break;
+                    case "4.1":
+                        System.out.println("Enter total villa in furama resort");
+                        int total = scn.nextInt();
+                        vl.addNewVilla(total);
+                        break;
+                    case "4.2":
+                        vl.displayVillaInfo();
+                        break;
+                    default:
+                        System.out.println("Please enter valid number:");
+                        break;
+                }
+                System.out.println("Enter 0 to exit - enter 4 to continues");
+                enter = scn.nextInt();
+            }while (enter != 0);
         }
 
-//            VillaManager vl = new VillaManager();
-//            int enter;
-//            do{
-//                System.out.println("-------------------MENU--------------------");
-//                System.out.println("*    1. Check in                          *");
-//                System.out.println("*    2. Swimming Pool Opening Times       *");
-//                System.out.println("*    3. Service                           *");
-//                System.out.println("*       3.1. Swimming Pool Service        *");
-//                System.out.println("*       3.2. Rent day                     *");
-//                System.out.println("*    4. Manager Villa                     *");
-//                System.out.println("*       4.1. Add new bed and swimming pool*");
-//                System.out.println("*       4.2. Display info villa           *");
-//                System.out.println("*    0. Exit                              *");
-//                System.out.println("*    4. Continues                         *");
-//                System.out.println("-------------------------------------------");
-//                System.out.print("    Please choose:   ");
-//                String choose = scn.next();
-//                switch (choose){
-//                    case "1":
-//                        System.out.println("Enter name of customer: ");
-//                        String customerName = scn.next();
-//                        System.out.println("Enter age of customer: ");
-//                        int  customerAge = scn.nextInt();
-//                        System.out.println("Enter V (Villa) or H(House)");
-//                        String type = scn.next();
-//                        System.out.println("Enter day");
-//                        int day = scn.nextInt();
-//                        infoCustomer(customerName,customerAge);
-//                        caculatorForRent(type.toUpperCase(),day);
-//                        break;
-//                    case "2":
-//                        swimmingPoolOpenTimes(TIME_OPEN);
-//                        break;
-//                    case "3.1":
-//                        System.out.println("Enter time (format: hh:mm): ");
-//                        String time = scn.next();
-//                        swimmingPoolService(time);
-//                        break;
-//                    case "3.2":
-//                        System.out.println("Enter money");
-//                        float money = scn.nextFloat();
-//                        System.out.println("Enter V (Villa) or H(House)");
-//                        String types = scn.next();
-//                        dayForRent(types.toUpperCase(), money);
-//                        break;
-//                    case "4.1":
-//                        System.out.println("Enter total villa in furama resort");
-//                        int total = scn.nextInt();
-//                        vl.addNewVilla(total);
-//                        break;
-//                    case "4.2":
-//                        vl.displayVillaInfo();
-//                        break;
-//                    default:
-//                        System.out.println("Please enter valid number:");
-//                        break;
-//                }
-//                System.out.println("Enter 0 to exit - enter 4 to continues");
-//                enter = scn.nextInt();
-//            }while (enter != 0);
-//        }
 
-    public static void inRa(){
-        int x = -1, a[] = {1,2,3,4};
-        for(int i=0;i<a.length;i++){
-            if(a[i] > x){
-                x = a[i];
-            }
-        }
-        System.out.println(x);
-
-//        int[][] a = {{2, 3, 4}, {5, 6, 7}};
-//        for(int i=0;i<a.length;i++){
-//            for(int j=0;j<a[i].length;j++){
-//                if(i==j){
-//                    System.out.print(a[i][j]);
-//                }
-//            }
-//        }
-
-//                int sum = 1, i = 5;
-//                while(i < 7){
-//                    sum += i;
-//                    i++;
-//                }
-//                System.out.println(sum);
-
-            }
-//        //Task #1
-//        int a= 5;
-//        int b = a++;
-//        int c = ++b;
-//        int d = c--;
-//
-//        System.out.println(a+""+b+""+""+c+""+""+d);
 
 
 
