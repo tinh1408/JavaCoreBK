@@ -2,7 +2,7 @@ package com.ateach.quizz.reviewPf1;
 
 public class isLucky {
     boolean isLucky(int n) {
-        String num = Integer.toString(n);
+        String num = Integer.toString(n); //1234 -?"1234"
         int x = 0;
         int sum1 = 0;
         int sum2 = 0;
