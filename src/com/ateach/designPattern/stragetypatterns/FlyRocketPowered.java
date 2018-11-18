@@ -1,4 +1,4 @@
-package com.ateach.basic.stragetypatterns;
+package com.ateach.designPattern.stragetypatterns;
 
 public class FlyRocketPowered implements FlyBehavior {
     @Override

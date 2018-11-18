@@ -1,4 +1,4 @@
-package com.ateach.basic.stragetypatterns;
+package com.ateach.designPattern.stragetypatterns;
 
 public class MuteQuack implements QuackBehavior {
     @Override
