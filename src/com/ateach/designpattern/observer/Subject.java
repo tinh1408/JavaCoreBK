@@ -1,4 +1,4 @@
-package com.ateach.designPattern.observer;
+package com.ateach.designpattern.observer;
 
 public interface Subject {
     public void registerObserver(Observer o);

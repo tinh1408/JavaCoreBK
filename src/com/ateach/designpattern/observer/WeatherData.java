@@ -1,4 +1,4 @@
-package com.ateach.designPattern.observer;
+package com.ateach.designpattern.observer;
 
 import java.util.ArrayList;
 

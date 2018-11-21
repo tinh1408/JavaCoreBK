@@ -1,4 +1,4 @@
-package com.ateach.designPattern.observer;
+package com.ateach.designpattern.observer;
 
 public class WeatherStation {
     public static void main(String[] args) {

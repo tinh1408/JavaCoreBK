@@ -1,4 +1,4 @@
-package com.ateach.designPattern.observer;
+package com.ateach.designpattern.observer;
 
 public class CurrentConditionsDisplay implements Observer, DisplayElement {
     private float temperature;
