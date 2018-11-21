@@ -3,7 +3,7 @@
 
 # Log file
 *.log
-
+*.idea
 # BlueJ files
 *.ctxt
 
@@ -19,7 +19,7 @@
 *.tar.gz
 *.rar
 *.git
-*.idea
+
 *.xml
 
 
