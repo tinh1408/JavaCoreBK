@@ -11,20 +11,21 @@ public class Main {
     static final String TIME_OPEN = "9PM";
 
     public static void main(String[] args) {
-        Scanner scn  = new Scanner(System.in);
-        String s = scn.next();
-        String[] bytes = s.split("\\.", 4);
-        System.out.println(Arrays.toString(bytes));
-        String a = "abccba";
+
+        String a = "abcacba";
         char[] sr = a.toCharArray();
         boolean kt = true;
-        for(int i = 0; i<sr.length+1;i++){
-            if(sr[i] != sr[sr.length-i]){
+        for (int i = 0; i < sr.length; i++) {
+            if (sr[i] != sr[sr.length - i - 1]) {
                 kt = false;
                 break;
             }
         }
-        if(kt == true)
+        if (kt == true) {
+            System.out.println("doi xung");
+        } else {
+            System.out.println("khong phai la chuoi doi xung");
+        }
 
     }
 
