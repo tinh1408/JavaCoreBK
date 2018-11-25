@@ -1,4 +1,4 @@
-package com.ateach.pdf1.project;
+package com.ateach.pdf1.project.furamaStruct;
 
 import java.util.Scanner;
 

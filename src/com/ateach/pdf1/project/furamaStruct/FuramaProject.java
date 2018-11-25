@@ -1,11 +1,11 @@
-package com.ateach.pdf1.project;
+package com.ateach.pdf1.project.furamaStruct;
 
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoField;
 import java.util.Scanner;
 
-public class Villa2 {
+public class FuramaProject {
     private static Scanner scn = new Scanner(System.in);
     static final String TIME_OPEN = "9PM";
 
@@ -56,7 +56,7 @@ public class Villa2 {
                     dayForRent(types.toUpperCase(), money);
                     break;
                 case "4.1":
-                    System.out.println("Enter total villa in furama resort");
+                    System.out.println("Enter total villa in furamaOop resort");
                     int total = scn.nextInt();
                     vl.addNewVilla(total);
                     break;
