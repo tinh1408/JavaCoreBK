@@ -1,6 +1,4 @@
-package com.ateach.stopwatch;
-
-import static org.junit.jupiter.api.Assertions.*;
+package com.ateach.pdf2.stopwatch;
 
 class StopWatchTest {
 
