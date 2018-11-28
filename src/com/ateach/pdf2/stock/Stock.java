@@ -31,7 +31,7 @@ public class Stock {
 
     public void displayInfoChange(){
         System.out.println("Stock symbol: "+ symbol +" Name: "+name+" ChangePercent: " +changePercentString +"%");
-        }
+    }
 
 }
 
