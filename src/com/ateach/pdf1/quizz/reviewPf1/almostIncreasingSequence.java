@@ -10,7 +10,6 @@ public class almostIncreasingSequence {
                 issq = false;
                 break;
             }
-
         }
         return issq;
     }
