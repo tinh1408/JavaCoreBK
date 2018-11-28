@@ -29,17 +29,16 @@ public class StopWatch {
     }
 
     public void start(){
-        startTime = String.valueOf(System.nanoTime());
+        setStartTime(String.valueOf(System.nanoTime()));
     }
 
     public void end(){
-        endTime = String.valueOf(System.nanoTime());
+        setEndTime(String.valueOf(System.nanoTime()));
     }
 
     public void getElapsedTime() {
         long milisecond = 0;
         milisecond = Long.parseLong(endTime) - Long.parseLong(startTime) ;
-        System.out.println(milisecond);
         double seconds = (double)milisecond / 1_000_000_000.0;
         System.out.println("Solution Time : "+seconds+"s");
     }
