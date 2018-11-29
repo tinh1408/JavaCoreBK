@@ -20,10 +20,10 @@ public class Stock {
         df.setMaximumFractionDigits(3);
 
         if(previousClosingPrice < currentPrice){
-            changePercent =   ((currentPrice - previousClosingPrice)*100)/ currentPrice;
+            changePercent =   ((currentPrice - previousClosingPrice)*100)/ previousClosingPrice;
             changePercentString =  "increase "+df.format(changePercent);
         }else{
-            changePercent = ((previousClosingPrice - currentPrice ) *100)/ previousClosingPrice;
+            changePercent = ((previousClosingPrice - currentPrice ) *100)/ currentPrice;
             changePercentString =  "decrease "+df.format(changePercent);
         }
         return changePercentString;
