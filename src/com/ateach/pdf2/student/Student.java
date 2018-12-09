@@ -1,7 +1,7 @@
 package com.ateach.pdf2.student;
 
 public class Student {
-    private String name;
+    private String name="hhhh";
     private int age;
 
     public Student() {

@@ -1,7 +1,10 @@
 package com.ateach.pdf2.student;
 
 public class StudentManager {
+
     private Student[] students = new Student[20];
+
+
     private int size;
 
     public StudentManager() {

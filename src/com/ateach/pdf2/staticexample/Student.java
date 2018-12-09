@@ -21,7 +21,7 @@ class Student {
 
     public static void main(String[] args) {
         staticMethod();
-        //  nonStaticMethod(); // can't access
+        //nonStaticMethod(); // can't access
     }
 }
 
@@ -29,6 +29,12 @@ class School {
 
     public void callStudentClass() {
         Student st = new Student("HSA", 30);
+        
+        st.staticMethod();
+        st.nonStaticMethod();
+
+
+
         Student st1 = new Student("HSB", 25);
         Student st3 = new Student("HSC", 20);
     }
