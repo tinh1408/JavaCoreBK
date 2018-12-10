@@ -1,4 +1,4 @@
-package com.ateach.pdf2.polymorphism;
+package com.ateach.pdf2.polymorphism.example1;
 
 /**
  * Creditcard IS-A Payment type
