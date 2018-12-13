@@ -20,5 +20,4 @@ class Circle extends Shape {
     public String toString() {
         return "Circle color is " + super.color + "and area is : " + area();
     }
-
 }

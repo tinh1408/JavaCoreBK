@@ -17,7 +17,6 @@ interface mauSon{
 
 class XeMay extends Xe {
 
-
     @Override
     void khoiDong() {
         System.out.println("Xe may khoi dong");
