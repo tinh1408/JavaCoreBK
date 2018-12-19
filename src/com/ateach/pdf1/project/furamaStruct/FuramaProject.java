@@ -19,7 +19,7 @@ public class FuramaProject {
             System.out.println("*    3. Service                           *");
             System.out.println("*       3.1. Swimming Pool Service        *");
             System.out.println("*       3.2. Rent day                     *");
-            System.out.println("*    4. Manager Villa                     *");
+            System.out.println("*    4. ManagerPerson Villa                     *");
             System.out.println("*       4.1. Add new bed and swimming pool*");
             System.out.println("*       4.2. Display info villa           *");
             System.out.println("*    0. Exit                              *");
