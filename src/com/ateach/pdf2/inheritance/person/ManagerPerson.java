@@ -14,7 +14,6 @@ public class ManagerPerson {
 
     public void addNewStudent(int sl){
         for(int i = 0; i<sl;i++){
-            ps[count] = new Student();
             Student st = new Student();
             st.addInfoStudent();
             ps[count] = st;
@@ -23,7 +22,6 @@ public class ManagerPerson {
     }
     public  void addNewStaff(int sl){
         for(int i = 0; i <sl ; i++){
-            ps[count] = new Staff();
             Staff sf = new Staff();
             sf.addInfoStaff();
             ps[count] = sf;
@@ -33,7 +31,7 @@ public class ManagerPerson {
 
     public void displayStudentAndStaff(){
         for(int i = 0; i< count; i++){
-            System.out.println("Person: "+(int)(i +1)+" "+ps[i].toString());
+            System.out.println("Person: "+(int)(i +1)+": "+ps[i].toString());
         }
     }
 }
