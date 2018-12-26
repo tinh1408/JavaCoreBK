@@ -2,7 +2,7 @@ package com.ateach.pdf2.inheritance.person;
 
 import java.util.Scanner;
 
-public class Staff extends Person{
+public class Staff extends Person {
     private String school;
     private double pay;
 
@@ -21,19 +21,20 @@ public class Staff extends Person{
     public void setPay(double pay) {
         this.pay = pay;
     }
-    public Staff(){
+
+    public Staff() {
         super();
         school = "";
         pay = 0;
     }
 
     public Staff(String name, String address, String school, double pay) {
-        super(name,address);
+        super(name, address);
         this.school = school;
         this.pay = pay;
     }
 
-    public void addInfoStaff(){
+    public void addInfoStaff() {
         super.addInfo();
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter school: ");
@@ -42,7 +43,7 @@ public class Staff extends Person{
         pay = sc.nextDouble();
     }
 
-    public String toString(){
-        return "Staff info: "+super.toString()+", school: "+ school+", pay: "+pay+"";
+    public String toString() {
+        return "Staff info: " + super.toString() + ", school: " + school + ", pay: " + pay + "";
     }
 }
