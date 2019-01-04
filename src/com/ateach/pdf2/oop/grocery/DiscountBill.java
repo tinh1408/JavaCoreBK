@@ -14,7 +14,6 @@ public class DiscountBill extends GroceryBill{
         /**
          * Set up discountConditions because DiscountBill will apply some discount which depends on some conditions.
          */
-
         if(preferred){
             discountConditions = new DiscountCondition[2];
             discountConditions[0] = new Condition(customer.getName(),"peter", 30);
