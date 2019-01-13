@@ -2,21 +2,30 @@ package com.ateach.pdf2.collectionFrameWork;
 
 import java.util.*;
 
+class SinhVien{
+    public SinhVien(String ten, int diem) {
+        this.ten = ten;
+        this.diem = diem;
+    }
+
+    @Override
+    public String toString() {
+        return "SinhVien{" +
+                "ten='" + ten + '\'' +
+                ", diem=" + diem +
+                '}';
+    }
+
+    String ten;
+    int diem;
+}
+
 class TreeMapTest {
+
     public static void main(String args[]) {
-        TreeMap<Integer, String> map = new TreeMap<Integer, String>();
-        map.put(100, "Amit");
-        map.put(102, "Ravi");
-        map.put(101, "Vijay");
-        map.put(103, "Rahul");
-        System.out.println("Before invoking remove() method");
-        for (Map.Entry m : map.entrySet()) {
-            System.out.println(m.getKey() + " " + m.getValue());
-        }
-        map.remove(102);
-        System.out.println("After invoking remove() method");
-        for (Map.Entry m : map.entrySet()) {
-            System.out.println(m.getKey() + " " + m.getValue());
-        }
+       String s = "lioo";
+       String s1 = "liemmmmmmmmmnnn";
+        System.out.println(s.compareTo(s1));
+
     }
 }

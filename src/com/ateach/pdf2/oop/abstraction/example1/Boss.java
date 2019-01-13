@@ -11,7 +11,7 @@
 //    }
 //
 //
-//    public int calculateSalaryBoss() {
+//    public int calculateSalaryBossCuaThu() {
 //        return getPaymentPerHour() * workingHours;
 //    }
 //}

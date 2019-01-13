@@ -1,8 +1,9 @@
-package com.ateach.pdf2.collectionFrameWork;
+package com.ateach.pdf2.collectionFrameWork.arraylinkedlist;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
 
+// Do thoi gian thuc thi
 public class ArrayListLinkedList {
     public static void main(String[] args) {
 
@@ -16,6 +17,7 @@ public class ArrayListLinkedList {
             arrayList.add(i);
         }
         long endTime = System.nanoTime();
+
         long duration = endTime - startTime;
         System.out.println("ArrayList add:  " + duration);
 

@@ -7,7 +7,7 @@
 //    }
 ////
 //
-//    public int calculateSalaryEmpu() {
+//    public int calculateSalary() {
 //        return getPaymentPerHour() * 8;
 //    }
 //}
