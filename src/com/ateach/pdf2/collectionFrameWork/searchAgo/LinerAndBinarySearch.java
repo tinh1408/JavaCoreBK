@@ -20,6 +20,26 @@ public class LinerAndBinarySearch {
         return -1;
     }
 
+    public boolean binarySearch(int[] data, int key) {
+
+        int low = 0;
+        int high = data.length - 1;
+
+        while (high >= low) {
+            int middle = (low + high) / 2;
+            if (data[middle] == key) {
+                return true;
+            }
+            if (data[middle] < key) {
+                low = middle + 1;
+            }
+            if (data[middle] > key) {
+                high = middle - 1;
+            }
+        }
+        return false;
+    }
+
     public static void main(String[] args) {
         int[] source = {6, 32, 11, 22, 89, 45, 10, 1, 7, 55, 0, 8, 100, 94, 23, 53};
 
@@ -36,7 +56,7 @@ public class LinerAndBinarySearch {
 
         //-----------------------------------------
         long startTimeBina = System.nanoTime();
-        System.out.println(binarySearch(source,0,source.length,22));
+        System.out.println(binarySearch(source, 0, source.length, 22));
         long endTimeBina = System.nanoTime();
         long durationBina = endTimeBina - startTimeBina;
         System.out.println("Binary search:  " + durationBina);
