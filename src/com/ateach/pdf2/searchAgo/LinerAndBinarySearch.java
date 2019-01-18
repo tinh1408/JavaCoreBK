@@ -1,4 +1,4 @@
-package com.ateach.pdf2.collectionFrameWork.searchAgo;
+package com.ateach.pdf2.searchAgo;
 
 import java.util.Arrays;
 

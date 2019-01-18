@@ -1,4 +1,4 @@
-package com.ateach.pdf2.collectionFrameWork.orderAgo;
+package com.ateach.pdf2.orderAgo;
 
 public class SortArrayCharacter {
     String[] sortByLength(String[] inputArray) {
